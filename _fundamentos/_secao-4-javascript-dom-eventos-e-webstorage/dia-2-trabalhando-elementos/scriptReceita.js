@@ -16,7 +16,18 @@ for (i = 0; i < ingredientItems.length; i += 1) {
 
     let ingredientsListItem = document.createElement('li');
     ingredientsListItem.innerText = ingredient;
-
+    ingredientsListItem.className = 'ingredients-list.item';
     
    ingredientList.appendChild(ingredientsListItem);
 }
+
+let ingredientListItems = document.querySelector('.ingredients-list-item');
+for (let index = 0; index < ingredientListItems.length; index += 1){
+    let element = ingredientListItems[index];
+}
+
+if (element.innerText.includes('bacon')) {
+    ingredientList.removeChild();
+}
+
+
