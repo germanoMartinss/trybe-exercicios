@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trybe Talks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="abertura">
+        <h1>Campus Tryber Brasil</h1>
+        <p>Quer palestrar na nossa conferência? Preencha o formulário!</p>
+    </header>
+
+    <form action="" method="get" class="formulario">
+
+        <div class="conteudo">
+            <label for="nome-completo">Nome Completo:</label>
+            <br>
+            <input type="text" name="nome-completo" id="nome-completo" placeholder="Nome Completo">
+        </div>
+
+        <div class="conteudo">
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+        </div>
+
+
+
+        <div class="conteudo">
+            <p>Tipo de Palestra:</p>
+            <br>
+            <label for="opcao-1">Palco Mundo</label>
+            <input type="radio" name="palco-palestra" id="opcao-1" value="palco-mundo">
+
+            <label for="opcao-2">Palco Sunset</label>
+            <input type="radio" name="palco-palestra" id="opcao-2" value="palco-sunset">
+
+            <label for="opcao-3">Palco Supernova</label>
+            <input type="radio" name="palco-palestra" id="opcao-3" value="palco-supernova">
+
+        </div>
+
+        <div class="conteudo">
+            <label for="">Tamanho Camiseta:</label>
+            <select name="camiseta" id="tamanho-camiseta">
+                <option value="PP">PP</option>
+                <option value="P">P</option>
+                <option value="M">M</option>
+                <option value="G">G</option>
+                <option value="GG">GG</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="resumo">Resumo:</label>
+            <textarea name="resumo" id="resumo" cols="50" rows="10"></textarea>
+        </div>
+        <div class="conteudo">
+            <input type="checkbox" name="declaração" id="deAcordo">
+            <label for="deAcordo">Declaro que estou de acordo com as regras do evento.</label>
+        </div>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+</body>
+
+</html>
