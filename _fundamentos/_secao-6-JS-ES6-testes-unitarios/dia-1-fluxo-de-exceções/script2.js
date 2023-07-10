@@ -1,4 +1,3 @@
-// Primeira parte
 const promo = [
   { product: "bola de beach tennis", price: 29.99 },
   { product: "mochila de trilha 20 litros", price: 120.99 },
@@ -42,17 +41,18 @@ const showPromo = (name, number) => {
       ${productObject.product} no valor de R$ ${productObject.price}`;
   } catch (error) {
     secondText.innerHTML = error.message;
+  } finally {
+    document.querySelector("#name-id").value = "";
+    document.querySelector("#number-id").value = "";
   }
 };
 
-// Segunda parte
 const checkNumber = (number) => {
   if (isNaN(number)) {
     throw new Error("É necessário digitar um número");
   }
 };
 
-// Terceira parte
 const checkPromo = (number) => {
   for (let index = 0; index < promo.length; index += 1) {
     if (number - 1 === index) {
@@ -61,9 +61,8 @@ const checkPromo = (number) => {
   }
 };
 
-// Quarta parte
 const checkValidRanger = (number) => {
-    if (number < 1 || number > 10) {
-        throw new Error('É necessário digitar um número entre 1 e 10!');
-    }
+  if (number < 1 || number > 10) {
+    throw new Error("É necessário digitar um número entre 1 e 10!");
+  }
 };
