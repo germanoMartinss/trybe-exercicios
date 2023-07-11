@@ -15,9 +15,7 @@ if (palindromo === reverso) {
 }
 });
 
-
-
-
+//Crie uma automação que calcule a sequencia fibonacci até o número máximo 100.
 function fibonacciSequence(max) {
     let sequence = [0, 1];
   
@@ -28,16 +26,31 @@ function fibonacciSequence(max) {
   }
   let maxNumber = 100;
   let fibonacci = fibonacciSequence(maxNumber);
+  // console.log(fibonacci);
   
-  console.log(fibonacci);
-  
+//Crie um Array de 1 a 10
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//Insira o número 0 no início do array
+arr.unshift(0);
+//Insira o número 11 no final do array
+arr.push(11);
+//Remova o número 5 do array
+arr.splice(5, 1);
+//remova o número 8 do array e no lugar adicione uma sequencia de números: 20, 21, 22.
+arr.splice(7, 1);
+arr.splice(7, 0, 20, 21, 22)
+// console.log(arr);
 
-
-
-
-
-
-
+//A partir do Array abaixo crieu um novo array contendo apenas nome e idade:
+const familyList = [
+  {id: 1, nome: 'Liz', idade: 2},
+	{id: 2, nome: 'Thaís', idade: 32},
+	{id: 3, nome: 'Jonathan', idade: 30},
+	{id: 4, nome: 'Thainá', idade: 29},
+	{id: 5, nome: 'Fabiano', idade: 45},
+];
+let newList = familyList.map(itens => 'nome: ' + `${itens.nome},` + ' idade: ' + `${itens.idade}`);
+console.log(newList);
 
 
 // function fibonacci(n) {
