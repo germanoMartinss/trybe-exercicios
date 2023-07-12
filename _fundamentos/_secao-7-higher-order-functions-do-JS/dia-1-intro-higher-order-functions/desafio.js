@@ -69,16 +69,14 @@ const names = {
     gato: 'Gato',
     jaguar: 'Jaguar'
   };
-   const newArr = (Object.entries(names))
-  // console.log(newArr);
-  function separetorList(letters) {
-    if (letters === 'j')
-    return newArr.filter((value) => {
-      return value.entries === letters;
-    })
-  }
-  console.log(separetorList('j')); 
 
-// const newListName = newArr.filter((letters) => letters !== 'j')
-// const newNames = names.filter(letters => letters === 'j' && letters === 'J');
-// console.log(newNames);
+const newArr = (Object.keys(names))
+// function filterList(keys) {
+  for (let key of newArr) {
+    if (key.substring(0, 1) !== 'j') {
+      delete names[key];
+    }
+    // const newListNames = names[key].filter(keys)
+    console.log(names[key])
+  }
+// };
