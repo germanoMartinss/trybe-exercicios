@@ -50,16 +50,35 @@ const familyList = [
 	{id: 5, nome: 'Fabiano', idade: 45},
 ];
 let newList = familyList.map(itens => 'nome: ' + `${itens.nome},` + ' idade: ' + `${itens.idade}`);
-console.log(newList);
+// console.log(newList);
+
+//Utilize o mesmo array do desafio anterior para criar um array que contenha os valores abaixo dentro de uma tag h3 como no exemplo abaixo:
+let fullList = familyList.map(obj => `<h3> id: ${obj.id} - nome: ${obj.nome} - idade: ${obj.idade} </h3>`);
+// console.log(fullList);
 
 
-// function fibonacci(n) {
-//     if (n === 1) return 1;
-//     if (n === 2) return 2;
-//     return fibonacci(n - 1) + fibonacci(n - 2);
-// }
-// console.log(fibonacci(10));
-// console.log(fibonacci(10));
-// console.log(fibonacci())
+// Crie uma automação que remova todas as propriedades do objeto abaixo que não comecem com a letra "j"
+const names = {
+  jason: 'Jason',
+    thais: 'Thaís',
+    liz: 'Liz',
+    jennei: 'Jennei',
+    jenyffer: 'Jennyfer',
+    joao: 'João',
+    bola: 'Bola',
+    gato: 'Gato',
+    jaguar: 'Jaguar'
+  };
+   const newArr = (Object.entries(names))
+  // console.log(newArr);
+  function separetorList(letters) {
+    if (letters === 'j')
+    return newArr.filter((value) => {
+      return value.entries === letters;
+    })
+  }
+  console.log(separetorList('j')); 
 
-
+// const newListName = newArr.filter((letters) => letters !== 'j')
+// const newNames = names.filter(letters => letters === 'j' && letters === 'J');
+// console.log(newNames);
