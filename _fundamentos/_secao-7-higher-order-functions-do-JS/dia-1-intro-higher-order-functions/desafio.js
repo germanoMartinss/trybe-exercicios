@@ -15,9 +15,7 @@ if (palindromo === reverso) {
 }
 });
 
-
-
-
+//Crie uma automação que calcule a sequencia fibonacci até o número máximo 100.
 function fibonacciSequence(max) {
     let sequence = [0, 1];
   
@@ -28,25 +26,59 @@ function fibonacciSequence(max) {
   }
   let maxNumber = 100;
   let fibonacci = fibonacciSequence(maxNumber);
+  // console.log(fibonacci);
   
-  console.log(fibonacci);
-  
+//Crie um Array de 1 a 10
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//Insira o número 0 no início do array
+arr.unshift(0);
+//Insira o número 11 no final do array
+arr.push(11);
+//Remova o número 5 do array
+arr.splice(5, 1);
+//remova o número 8 do array e no lugar adicione uma sequencia de números: 20, 21, 22.
+arr.splice(7, 1);
+arr.splice(7, 0, 20, 21, 22)
+// console.log(arr);
+
+//A partir do Array abaixo crieu um novo array contendo apenas nome e idade:
+const familyList = [
+  {id: 1, nome: 'Liz', idade: 2},
+	{id: 2, nome: 'Thaís', idade: 32},
+	{id: 3, nome: 'Jonathan', idade: 30},
+	{id: 4, nome: 'Thainá', idade: 29},
+	{id: 5, nome: 'Fabiano', idade: 45},
+];
+let newList = familyList.map(itens => 'nome: ' + `${itens.nome},` + ' idade: ' + `${itens.idade}`);
+// console.log(newList);
+
+//Utilize o mesmo array do desafio anterior para criar um array que contenha os valores abaixo dentro de uma tag h3 como no exemplo abaixo:
+let fullList = familyList.map(obj => `<h3> id: ${obj.id} - nome: ${obj.nome} - idade: ${obj.idade} </h3>`);
+// console.log(fullList);
 
 
+// Crie uma automação que remova todas as propriedades do objeto abaixo que não comecem com a letra "j"
+const names = {
+  jason: 'Jason',
+    thais: 'Thaís',
+    liz: 'Liz',
+    jennei: 'Jennei',
+    jenyffer: 'Jennyfer',
+    joao: 'João',
+    bola: 'Bola',
+    gato: 'Gato',
+    jaguar: 'Jaguar'
+  };
+   const newArr = (Object.entries(names))
+  // console.log(newArr);
+  function separetorList(letters) {
+    if (letters === 'j')
+    return newArr.filter((value) => {
+      return value.entries === letters;
+    })
+  }
+  console.log(separetorList('j')); 
 
-
-
-
-
-
-
-// function fibonacci(n) {
-//     if (n === 1) return 1;
-//     if (n === 2) return 2;
-//     return fibonacci(n - 1) + fibonacci(n - 2);
-// }
-// console.log(fibonacci(10));
-// console.log(fibonacci(10));
-// console.log(fibonacci())
-
-
+// const newListName = newArr.filter((letters) => letters !== 'j')
+// const newNames = names.filter(letters => letters === 'j' && letters === 'J');
+// console.log(newNames);
