@@ -1,0 +1,9 @@
+const product = {
+    id: 1,
+    name: 'Camiseta',
+};
+
+// adiciona a chave `price` com o valor `23`
+const newProduct = { ...product, price: 23 };
+
+console.log(newProduct); // {id: 1, name: 'Camiseta', price: '23'}
